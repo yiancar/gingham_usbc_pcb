@@ -1,0 +1,6 @@
+
+Thank_you_Card_Back.pdf
+Thank_you_Card_Front.pdf
+*.sh
+*.hex
+/pcb/gerbers/*
