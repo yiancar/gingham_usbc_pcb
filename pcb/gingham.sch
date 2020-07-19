@@ -1311,8 +1311,8 @@ $Comp
 L MCU_Microchip_ATmega:ATmega328-PU U1
 U 1 1 5C16FB14
 P 2125 5525
-F 0 "U1" H 2175 6892 50  0000 C CNN
-F 1 "ATMEGA328-PU" H 2175 6801 50  0000 C CNN
+F 0 "U1" H 2825 7050 50  0000 C CNN
+F 1 "ATMEGA328-PU" H 2575 6975 50  0000 C CNN
 F 2 "Package_DIP:DIP-28_W7.62mm" H 2125 5525 50  0001 C CIN
 F 3 "http://www.atmel.com/images/atmel-8271-8-bit-avr-microcontroller-atmega48a-48pa-88a-88pa-168a-168pa-328-328p_datasheet.pdf" H 2125 5525 50  0001 C CNN
 	1    2125 5525
@@ -2872,8 +2872,6 @@ F 3 "" H 2125 10375 50  0001 C CNN
 	1    2125 10375
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2125 10325 2125 10375
 $Comp
 L power:GND #PWR0103
 U 1 1 5D1525C2
@@ -3009,7 +3007,7 @@ Text Label 4650 3375 2    50   ~ 10
 i2c_SDA
 Wire Wire Line
 	4650 3375 4725 3375
-Text Notes 2675 10100 0    50   ~ 6
+Text Notes 2675 10100 0    50   ~ 10
 Address: 0x20
 $Comp
 L USB4085-GF-A_REVA:USB4085-GF-A_REVA J1
@@ -3122,4 +3120,19 @@ Connection ~ 1800 1525
 Connection ~ 1800 1625
 Wire Wire Line
 	2300 1475 2300 1625
+Wire Wire Line
+	2125 10325 2125 10375
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F1CDB56
+P 1825 2225
+F 0 "#FLG0101" H 1825 2275 25  0001 C CNN
+F 1 "PWR_FLAG" H 1825 2354 25  0000 C CNN
+F 2 "" H 1825 2225 50  0000 C CNN
+F 3 "" H 1825 2225 50  0000 C CNN
+	1    1825 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2225 1825 2225
 $EndSCHEMATC
